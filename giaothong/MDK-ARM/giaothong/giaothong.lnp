@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"giaothong\startup_stm32f103xb.o"
+"giaothong\main.o"
+"giaothong\stm32f1xx_it.o"
+"giaothong\stm32f1xx_hal_msp.o"
+"giaothong\stm32f1xx_hal_gpio_ex.o"
+"giaothong\stm32f1xx_hal_tim.o"
+"giaothong\stm32f1xx_hal_tim_ex.o"
+"giaothong\stm32f1xx_hal.o"
+"giaothong\stm32f1xx_hal_rcc.o"
+"giaothong\stm32f1xx_hal_rcc_ex.o"
+"giaothong\stm32f1xx_hal_gpio.o"
+"giaothong\stm32f1xx_hal_dma.o"
+"giaothong\stm32f1xx_hal_cortex.o"
+"giaothong\stm32f1xx_hal_pwr.o"
+"giaothong\stm32f1xx_hal_flash.o"
+"giaothong\stm32f1xx_hal_flash_ex.o"
+"giaothong\stm32f1xx_hal_exti.o"
+"giaothong\system_stm32f1xx.o"
+--strict --scatter "giaothong\giaothong.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "giaothong.map" -o giaothong\giaothong.axf

@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"door\startup_stm32f103xb.o"
+"door\stm32_keypad4x4.o"
+"door\i2c-lcd.o"
+"door\main.o"
+"door\stm32f1xx_it.o"
+"door\stm32f1xx_hal_msp.o"
+"door\stm32f1xx_hal_gpio_ex.o"
+"door\stm32f1xx_hal_i2c.o"
+"door\stm32f1xx_hal.o"
+"door\stm32f1xx_hal_rcc.o"
+"door\stm32f1xx_hal_rcc_ex.o"
+"door\stm32f1xx_hal_gpio.o"
+"door\stm32f1xx_hal_dma.o"
+"door\stm32f1xx_hal_cortex.o"
+"door\stm32f1xx_hal_pwr.o"
+"door\stm32f1xx_hal_flash.o"
+"door\stm32f1xx_hal_flash_ex.o"
+"door\stm32f1xx_hal_exti.o"
+"door\stm32f1xx_hal_tim.o"
+"door\stm32f1xx_hal_tim_ex.o"
+"door\system_stm32f1xx.o"
+--strict --scatter "door\door.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "door.map" -o door\door.axf
